@@ -1,0 +1,10 @@
+services:
+  playsic:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - playsic-data:/data
+    restart: unless-stopped
+volumes:
+  playsic-data:
